@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjares Panadería Fina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <meta name="description"
+        content="Manjares Panadería Fina - Hojaldras dulces, saladas, pan dulce, gelatinas, paletas, pays, pasteles, bocadillos ¡y mucho más!">
+
+    <!-- Etiquetas OG para despues -->
+</head>
+
+<body>
+    <header class="nav-bar-container">
+        <nav class="nav-bar">
+            <div>
+                <a href="#home">
+                    <img src="./images/logo.png" alt="Logo Manjares Panadería Fina">
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-container" id="home">
+            <div class="hero">
+                <header class="hero-header">
+                    <h2>Bienvenidos a Manjares</h2>
+                    <h1>El arte de la repostería y el buen café en un solo lugar.</h1>
+                </header>
+                <p>En Manjares fusionamos la tradición panadera con el arte de la repostería fina.
+                    Nuestro espacio acogedor es un rincón donde el aroma del café recién molido se entrelaza con la
+                    dulzura de nuestras creaciones artesanales.</p>
+                <footer class="hero-footer">
+                    <a class="button" href="menu.html">Ver Menú</a>
+                    <a class="button" href="about-us.html">Sobre Nosotros </a>
+                </footer>
+            </div>
+        </section>
+
+        <section class="products-container" id="products">
+            <div class="products">
+                <header class="products-header">
+                    <h2 class="subtitle-style">Lo que nos hace especiales</h2>
+                    <p class="paragraph-style">En Manjares, nos dedicamos a crear experiencias gastronómicas memorables
+                        que despiertan los
+                        sentidos. Nuestra pasión por la calidad y el sabor auténtico se refleja en cada uno de nuestros
+                        productos y servicios.</p>
+                </header>
+                <div class="products-list">
+                    <article class="product-item">
+                        <header>
+                            <img src="./images/bread.jpg" alt="Photo of a very variation of bread - Photo by mohamed hassouna on Unsplash
+                            " title="Photo of bread" loading="lazy">
+                        </header>
+                        <h3>Panadería Artesanal</h3>
+                        <p>Elaboramos diariamente pan fresco siguiendo recetas tradicionales con un toque moderno.
+                            Desde
+                            crujientes hojaldras hasta suaves panes dulces, cada pieza está hecha con ingredientes
+                            seleccionados y el cuidado de manos expertas.</p>
+                    </article>
+
+                    <article class="product-item">
+                        <header>
+                            <img src="./images/coffee.jpg"
+                                alt="Photo of a coffee - Photo by Fahmi Fakhrudin on Unsplash" loading="lazy">
+                        </header>
+                        <h3>Cafetería de Especialidad</h3>
+                        <p>Servimos café de origen premium, preparado por baristas apasionados que dominan el arte
+                            de la extracción perfecta. Acompaña tu bebida favorita con nuestros bocadillos para una
+                            experiencia completa.</p>
+
+                    </article>
+
+                    <article class="product-item">
+                        <header>
+                            <img src="./images/cake.jpg" alt="Photo of a cake - Photo by SwapnIl Dwivedi on Unsplash"
+                                loading="lazy">
+                        </header>
+                        <h3>Pastelería Fina</h3>
+                        <p>Creaciones que son un festín visual y gustativo. Nuestros pasteles, pays y postres son
+                            pequeñas obras maestras elaboradas con técnicas refinadas, perfectas para celebraciones
+                            especiales o para darte un capricho cotidiano.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-container" id="events">
+            <div class="events">
+                <header>
+                    <h2 class="subtitle-style">Eventos en Manjares</h2>
+                </header>
+                <div class="events-list">
+                    <article class="event-item" id="valentine-button">
+                        <img src="./images/valentine.jpg"
+                            alt="Post for Valentine's Day - Photo by freestocks on Unsplash" loading="lazy">
+                        <p class="paragraph-style">Día de San Valentín</p>
+                    </article>
+                    <dialog class="item-modal" id="valentine-modal">
+                        <header>
+                            <img src="./images/valentine.jpg"
+                                alt="Post for Valentine's Day - Photo by freestocks on Unsplash" loading="lazy">
+                        </header>
+                        <div class="modal-content">
+                            <h3>Día de San Valentín</h3>
+                            <p>14 de febrero · 6:00 PM a 10:00 PM</p>
+                            <p>Celebra el amor con nosotros en una velada especial llena de dulces, café y buena vibra.
+                                Disfruta de postres exclusivos, música romántica en vivo y sorpresas que te derretirán
+                                el
+                                corazón. Ideal para parejas o para disfrutar con tus amistades más cercanas.</p>
+                        </div>
+                        <footer class="modal-footer">
+                            <a class="button" href="tel:+52962134 2246">Reserva tu lugar</a>
+                            <button class="close-modal" data-modal="valentine-modal">Cerrar</button>
+                        </footer>
+                    </dialog>
+                    <article class="event-item" id="kid-button">
+                        <img src="./images/kids.jpg" alt="Post for Kids Day - Photo by freestocks on Unsplash"
+                            loading="lazy">
+                        <p class="paragraph-style">Día del Niño</p>
+                    </article>
+                    <dialog class="item-modal" id="kid-modal">
+                        <header>
+                            <img src="./images/kids.jpg" alt="Post for Kids Day - Photo by freestocks on Unsplash"
+                                loading="lazy">
+                        </header>
+                        <div class="modal-content">
+                            <h3>Día del Niño</h3>
+                            <p>30 de abril · 2:00 PM – 6:00 PM</p>
+                            <p>Una tarde mágica para los más pequeños. Juegos, pastelitos divertidos, actividades
+                                creativas y promociones especiales pensadas para celebrar la alegría de ser niño. ¡Ven
+                                con toda la familia y pasa un día inolvidable!</p>
+                        </div>
+                        <footer class="modal-footer">
+                            <a class="button" href="tel:+52962134 2246">Reserva tu lugar</a>
+                            <button class="close-modal" data-modal="kid-modal">Cerrar</button>
+                        </footer>
+
+                    </dialog>
+                    <article class="event-item" id="mother-button">
+                        <img src="./images/mother.jpg" alt="Post for Mother's Day - Photo by freestocks on Unsplash"
+                            loading="lazy">
+                        <p class="paragraph-style">Día de las Madres</p>
+                    </article>
+                    <dialog class="item-modal" id="mother-modal">
+                        <header>
+                            <img src="./images/mother.jpg" alt="Post for Mother's Day - Photo by freestocks on Unsplash"
+                                loading="lazy">
+                        </header>
+                        <div class="modal-content">
+                            <h3>Día de las Madres</h3>
+                            <p>10 de mayo · 8:00 AM - 1:00 PM</p>
+                            <p>Homenajeamos a todas las mamás con un desayuno especial, postres hechos con amor y
+                                ambiente acogedor. Ven a consentir a la reina de la casa con sabores que conquistan el
+                                corazón. Música suave, detalles únicos y un momento para recordar.</p>
+                        </div>
+                        <footer class="modal-footer">
+                            <a class="button" href="tel:+52962134 2246">Reserva tu lugar</a>
+                            <button class="close-modal" data-modal="mother-modal">Cerrar</button>
+                        </footer>
+
+                    </dialog>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-container" id="gallery">
+            <div class="gallery">
+                <header>
+                    <h2 class="subtitle-style">Galería de Imágenes</h2>
+                </header>
+                <div class="gallery-content">
+                    <div class="image-container">
+                        <img src="./images/gallery/photo1.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/gallery/photo2.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/gallery/photo3.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/gallery/photo4.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/gallery/photo5.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/gallery/photo6.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/gallery/photo7.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/gallery/photo8.jpg" alt="Fotografía de panadería" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-container" id="menu">
+            <div class="menu">
+                <header class="menu-header">
+                    <h2 class="subtitle-style">Descubre Nuestros Manjares</h1>
+                </header>
+                <p class="paragraph-style">En Manjares Panadería Fina, cada platillo es una invitación a disfrutar de lo
+                    casero, lo artesanal y lo
+                    delicioso. Ya sea que vengas por un café o te animes con algo dulce, tenemos justo lo que tu antojo
+                    necesita. </p>
+                <div class="menu-content">
+                    <article class="menu-section">
+                        <header>
+                            <h3>Panadería</h3>
+                        </header>
+                        <div class="menu-section-content">
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Conchas</h4>
+                                    <p>$15.00</p>
+                                </div>
+                                <p>Esponjosas y dulces, con cobertura crujiente y sabor clásico.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Donas</h4>
+                                    <p>$14.00</p>
+                                </div>
+                                <p>Suaves, glaseadas o con azúcar, perfectas para acompañar tu café.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Cuernitos</h4>
+                                    <p>$18.00</p>
+                                </div>
+                                <p>Hojaldrados, doraditos y con un toque de mantequilla.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Volovanes</h4>
+                                    <p>$22.00</p>
+                                </div>
+                                <p>Rellenos de jamón, queso o piña; salados y ligeros.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Beso</h4>
+                                    <p>$16.00</p>
+                                </div>
+                                <p>Dulce tradicional de dos galletas con relleno cremoso.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Rebanadas</h4>
+                                    <p>$15.00</p>
+                                </div>
+                                <p>Pan suave con cobertura de sabores como vainilla o fresa.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-section">
+                        <header>
+                            <h3>Cafetería</h3>
+                        </header>
+                        <div class="menu-section-content">
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Café Americano</h4>
+                                    <p>$25.00</p>
+                                </div>
+                                <p>Café negro suave y aromático, hecho con granos seleccionados.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Capuchino</h4>
+                                    <p>$30.00</p>
+                                </div>
+                                <p>Espresso con leche espumada, balanceado y reconfortante.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Chocolate</h4>
+                                    <p>$30.00</p>
+                                </div>
+                                <p>Calientito y cremoso, con sabor a cacao de verdad.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Frappe de Oreo</h4>
+                                    <p>$40.00</p>
+                                </div>
+                                <p>Frío, cremoso, con trocitos de galleta Oreo que te van a encantar.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Frappe de Mazapán</h4>
+                                    <p>$40.00</p>
+                                </div>
+                                <p>Una mezcla fría y dulce con el sabor clásico del mazapán.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Té de Manzanilla</h4>
+                                    <p>$22.00</p>
+                                </div>
+                                <p>Infusión natural, relajante y suave, perfecta para cualquier momento.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-section">
+                        <header>
+                            <h3>Pastelería</h3>
+                        </header>
+                        <div class="menu-section-content">
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Pastel de Chocolate</h4>
+                                    <p>$38.00</p>
+                                </div>
+                                <p>Rico y húmedo, con cobertura de chocolate derretido.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Tres Leches</h4>
+                                    <p>$38.00</p>
+                                </div>
+                                <p>Esponjoso y empapado en leche con crema chantilly.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Fresas con Crema</h4>
+                                    <p>$40.00</p>
+                                </div>
+                                <p>Con base de vainilla, relleno y cobertura de fresas frescas.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Pastel de Vainilla</h4>
+                                    <p>$35.00</p>
+                                </div>
+                                <p>Suave, clásico, con betún de mantequilla o crema batida.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Pastel de Oreo</h4>
+                                    <p>$42.00</p>
+                                </div>
+                                <p>Con galletas Oreo trituradas y crema dulce, perfecto para fans.</p>
+                            </div>
+
+                            <div class="menu-item">
+                                <div>
+                                    <h4>Cheesecake</h4>
+                                    <p>$45.00</p>
+                                </div>
+                                <p>Cremoso, con base de galleta y topping de fresa o zarzamora.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <a class="button" href="menu.html">Ver Menú</a>
+            </div>
+
+        </section>
+
+        <section class="contact-container" id="contact">
+            <div class="contact">
+                <header>
+                    <h2 class="subtitle-style">Visítanos en Manjares Panadería Fina</h2>
+                </header>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-info-section">
+                            <div class="contact-title">
+                                <img src="./images/icons/location.png" alt="Location icon">
+                                <h3>Dirección</h3>
+                            </div>
+                            <div>
+                                <p>Central Norte. 127. Entre 17 y 19 Oriente</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-section">
+                            <div class="contact-title">
+                                <img src="./images/icons/clock.png" alt="Clock icon">
+                                <h3>Horarios</h3>
+                            </div>
+                            <div>
+                                <p><strong>Lunes a Sábado</strong> — 8:00 a.m. a 9:00 p.m.</p>
+                                <p><strong>Domingos</strong> — 9:00 a.m. a 2:00 p.m.</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-section">
+                            <div class="contact-title">
+                                <img src="./images/icons/phone.png" alt="Phone icon">
+                                <h3>Contactanos</h3>
+                            </div>
+                            <div>
+                                <p><strong>Teléfono:</strong> (962) 134 2246</p>
+                                <p><strong>Correo electrónico:</strong> manjares_fina@outlook.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.4068038594355!2d-92.26136692314145!3d14.914412269313141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0ed9a3855555%3A0x99dbf0f2875e51e9!2sPanader%C3%ADa%20Manjares!5e0!3m2!1ses-419!2smx!4v1744685608620!5m2!1ses-419!2smx"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer">
+            <div>
+                <a href="#home">
+                    <img src="./images/logo.png" alt="Logo Manjares Panadería Fina">
+                </a>
+            </div>
+            <div class="footer-section">
+                <header>
+                    <h4>CONTACTO</h4>
+                </header>
+                <div class="footer-info">
+                    <div class="footer-item">
+                        <a href="tel:5514910476">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <p>(55) 1234-5678</p>
+                    </div>
+                    <div class="footer-item">
+                        <a href="mailto:manjares_fina@outlook.com"><i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <p>manjares_fina@outlook.com</p>
+                    </div>
+                    <div class="footer-item">
+                        <a href="whatsapp://send?phone=5219621342246">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <p>+52 1 962 134 2246</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <header>
+                    <h4>REDES SOCIALES</h4>
+                </header>
+                <div class="footer-info">
+                    <div class="footer-item">
+                        <a href="https://www.facebook.com/profile.php?id=100064061021651" target="_blank"
+                            rel="noreferrer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <p>Manjares Panadería Fina </p>
+                    </div>
+                    <div class="footer-item">
+                        <a href="https://www.instagram.com/manjarescafeteria/" target="_blank" rel="noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <p>manjarescafeteria</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2023 Manjares Panadería Fina. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
