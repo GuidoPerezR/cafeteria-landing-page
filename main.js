@@ -45,14 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("open");
     });
 
-    // Cierra el menú si haces click fuera
-    document.addEventListener("click", function (e) {
-        if (navLinks.classList.contains("open") && !navLinks.contains(e.target) && e.target !== hamburger) {
-            navLinks.classList.remove("open");
-        }
-    });
-
-    // Opcional: cierra al hacer click en cualquier enlace del menú
+    // Cierra al hacer click en cualquier enlace del menú
     navLinks.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", function () {
             navLinks.classList.remove("open");

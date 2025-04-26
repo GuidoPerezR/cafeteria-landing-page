@@ -57,11 +57,13 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: Lora, sans-serif;
+  overflow-x: hidden;
 }
 
 .button {
   width: 12rem;
   height: 3.5rem;
+  font-size: 1rem;
   background: transparent;
   text-transform: uppercase;
   outline: 2px solid var(--white);
@@ -178,10 +180,12 @@ body {
 
 .hero-container {
   position: relative;
-  background-image: url("./images/hero-background.jpg");
+  background: url("./images/hero-background.jpg"), rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* Este atributo determina como los fondos se pueden mezclar con sus colores   */
+  background-blend-mode: multiply;
   min-height: 100vh;
   z-index: 1;
   color: var(--white);
@@ -189,14 +193,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
-  }
+  width: 100vw;
 }
 
 .hero {
@@ -252,6 +249,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100vw;
 }
 
 .products {
@@ -259,7 +257,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   animation: fade-in linear both;
   animation-timeline: view();
   animation-range: entry 20% cover 40%;
@@ -326,6 +324,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100vw;
 }
 
 .events {
@@ -334,7 +333,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
   gap: 4rem;
 
   animation: fade-in linear both;
@@ -359,8 +358,8 @@ body {
 
   & img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    aspect-ratio: 2/3;
+    overflow: hidden;
   }
 
   & p {
@@ -490,6 +489,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100vw;
 }
 
 .gallery {
@@ -497,7 +497,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
 
   animation: fade-in linear both;
   animation-timeline: view();
@@ -537,6 +537,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100vw;
 }
 
 .menu {
@@ -545,7 +546,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   max-width: 80rem;
 
   animation: fade-in linear both;
@@ -620,6 +621,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .contact {
@@ -627,7 +629,7 @@ body {
   flex-direction: column;
   max-width: 55rem;
   gap: 4rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
 
   animation: fade-in linear both;
   animation-timeline: view();
@@ -637,7 +639,7 @@ body {
 .contact-content {
   display: flex;
   box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  padding: 1.5rem;
 }
 
 .contact-info {
@@ -678,8 +680,9 @@ body {
 }
 
 .contact-map {
-  width: 100%;
-  height: 40rem;
+  width: 90%;
+  margin-inline: auto;
+  aspect-ratio: 1/1;
 
   & iframe {
     width: 100%;
@@ -828,7 +831,6 @@ body {
 
   .hamburger {
     display: block;
-    /* z-index: 3; */
     padding: 1.5rem;
   }
 
@@ -842,14 +844,14 @@ body {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 60%;
+    width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
     padding: 6rem 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     transition: left 0.3s ease;
     z-index: 10;
@@ -861,12 +863,98 @@ body {
 
   .nav-links ul {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 4rem;
     width: 100%;
   }
 
   .nav-links li a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     animation: none !important;
+  }
+
+  .hero-header {
+    & h2 {
+      font-size: 2rem;
+    }
+
+    & h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .hero-footer {
+    flex-direction: column;
+  }
+
+  .products {
+    max-width: 45rem;
+  }
+
+  .products-header {
+    & p {
+      width: 100%;
+    }
+  }
+
+  .products-list {
+    flex-direction: column;
+  }
+
+  .events {
+    max-width: 35rem;
+  }
+
+  .events-list {
+    flex-direction: column;
+  }
+
+  .event-item {
+    & p {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .gallery {
+    max-width: 35rem;
+  }
+
+  .gallery-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu {
+    gap: 3rem;
+    max-width: 45rem;
+    & .paragraph-style {
+      width: 100%;
+    }
+  }
+
+  .menu-content {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .contact {
+    max-width: 45rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
