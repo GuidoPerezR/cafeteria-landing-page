@@ -61,12 +61,14 @@ body {
 }
 
 .button {
-  width: 12rem;
-  height: 3.5rem;
+  min-width: 12rem;
+  /* height: 3.5rem; */
   font-size: 1rem;
+  padding: 1rem 2rem;
   background: transparent;
   text-transform: uppercase;
-  outline: 2px solid var(--white);
+  color: var(--light-gold);
+  outline: 2px solid var(--light-gold);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +85,6 @@ body {
   font-size: 3rem;
   text-align: center;
   font-family: Playfair Display, serif;
-  text-transform: capitalize;
   font-weight: 800;
   color: var(--black);
 }
@@ -220,7 +221,7 @@ body {
   gap: 1rem;
 
   & h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     font-family: Great Vibes, serif;
     letter-spacing: 6px;
@@ -232,15 +233,28 @@ body {
     font-size: 4rem;
     text-align: center;
     font-family: Playfair Display, serif;
-    text-transform: capitalize;
     color: white;
   }
 }
 
 .hero-footer {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  & a {
+    font-size: 1.5rem;
+    background: transparent;
+    text-transform: uppercase;
+    outline: 2px solid var(--white);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: var(--light-gold);
+      transform: translateY(-5px);
+      color: var(--white);
+      outline: 2px solid var(--light-gold);
+    }
+  }
 }
 
 .products-container {
@@ -545,9 +559,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   padding: 4rem 2rem;
-  max-width: 80rem;
+  max-width: 85rem;
 
   animation: fade-in linear both;
   animation-timeline: view();
@@ -556,22 +570,17 @@ body {
   & .paragraph-style {
     width: 75%;
   }
-
-  & a {
-    color: var(--light-gold);
-    outline: 2px solid var(--light-gold);
-  }
 }
 
 .menu-content {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .menu-section {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   flex: 1;
 
   & header h3 {
@@ -586,7 +595,7 @@ body {
 .menu-section-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .menu-item {
@@ -688,6 +697,12 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-container {
@@ -882,10 +897,6 @@ body {
     & h1 {
       font-size: 3rem;
     }
-  }
-
-  .hero-footer {
-    flex-direction: column;
   }
 
   .products {
